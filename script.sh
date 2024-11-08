@@ -1,5 +1,6 @@
 #!/bin/bash
 cd openwrt
+sed -i 's/192.168.1.1/192.168.110.235/g' package/base-files/files/bin/config_generate
 
 # Add luci-app-adguardhome
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package-temp/luci-app-adguardhome
